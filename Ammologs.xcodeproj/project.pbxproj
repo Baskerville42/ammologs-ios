@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3725A60B2A21D7E9009B8654 /* AmmoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A60A2A21D7E9009B8654 /* AmmoListView.swift */; };
+		3725A60D2A21DE75009B8654 /* AmmoAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A60C2A21DE75009B8654 /* AmmoAddView.swift */; };
+		3725A60F2A21E2E8009B8654 /* AmmoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A60E2A21E2E8009B8654 /* AmmoDetailView.swift */; };
+		3725A6122A21E97C009B8654 /* WeaponListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A6112A21E97C009B8654 /* WeaponListView.swift */; };
+		3725A6142A2229E4009B8654 /* WeaponDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A6132A2229E4009B8654 /* WeaponDetailView.swift */; };
+		3725A6162A226E72009B8654 /* AmmoSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A6152A226E72009B8654 /* AmmoSettingsView.swift */; };
+		3725A6192A228588009B8654 /* SessionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A6182A228588009B8654 /* SessionListView.swift */; };
+		3725A61B2A2286E0009B8654 /* WeaponSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A61A2A2286E0009B8654 /* WeaponSettingsView.swift */; };
+		3725A61D2A228BBD009B8654 /* WeaponAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A61C2A228BBD009B8654 /* WeaponAddView.swift */; };
+		3725A61F2A22B6DD009B8654 /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A61E2A22B6DD009B8654 /* SessionDetailView.swift */; };
+		3725A6212A22B870009B8654 /* SessionSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A6202A22B870009B8654 /* SessionSettingsView.swift */; };
+		3725A6232A22C12A009B8654 /* SessionAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A6222A22C12A009B8654 /* SessionAddView.swift */; };
+		37E056BE2A21D4100035235C /* AmmologsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E056BD2A21D4100035235C /* AmmologsApp.swift */; };
+		37E056C02A21D4100035235C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E056BF2A21D4100035235C /* ContentView.swift */; };
+		37E056C22A21D4130035235C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E056C12A21D4130035235C /* Assets.xcassets */; };
+		37E056C52A21D4130035235C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E056C42A21D4130035235C /* Preview Assets.xcassets */; };
+		37E056C72A21D4130035235C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E056C62A21D4130035235C /* Persistence.swift */; };
+		37E056CA2A21D4130035235C /* Ammologs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37E056C82A21D4130035235C /* Ammologs.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3725A60A2A21D7E9009B8654 /* AmmoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmoListView.swift; sourceTree = "<group>"; };
+		3725A60C2A21DE75009B8654 /* AmmoAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmoAddView.swift; sourceTree = "<group>"; };
+		3725A60E2A21E2E8009B8654 /* AmmoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmoDetailView.swift; sourceTree = "<group>"; };
+		3725A6112A21E97C009B8654 /* WeaponListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListView.swift; sourceTree = "<group>"; };
+		3725A6132A2229E4009B8654 /* WeaponDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetailView.swift; sourceTree = "<group>"; };
+		3725A6152A226E72009B8654 /* AmmoSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmoSettingsView.swift; sourceTree = "<group>"; };
+		3725A6182A228588009B8654 /* SessionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListView.swift; sourceTree = "<group>"; };
+		3725A61A2A2286E0009B8654 /* WeaponSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSettingsView.swift; sourceTree = "<group>"; };
+		3725A61C2A228BBD009B8654 /* WeaponAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponAddView.swift; sourceTree = "<group>"; };
+		3725A61E2A22B6DD009B8654 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		3725A6202A22B870009B8654 /* SessionSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSettingsView.swift; sourceTree = "<group>"; };
+		3725A6222A22C12A009B8654 /* SessionAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionAddView.swift; sourceTree = "<group>"; };
+		37E056BA2A21D4100035235C /* Ammologs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ammologs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E056BD2A21D4100035235C /* AmmologsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmologsApp.swift; sourceTree = "<group>"; };
+		37E056BF2A21D4100035235C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37E056C12A21D4130035235C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37E056C42A21D4130035235C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37E056C62A21D4130035235C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		37E056C92A21D4130035235C /* Ammologs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ammologs.xcdatamodel; sourceTree = "<group>"; };
+		37E056CB2A21D4130035235C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37E056B72A21D4100035235C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3725A6082A21D795009B8654 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3725A6172A22856B009B8654 /* Session */,
+				3725A6102A21E957009B8654 /* Weapon */,
+				3725A6092A21D7A7009B8654 /* Ammo */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3725A6092A21D7A7009B8654 /* Ammo */ = {
+			isa = PBXGroup;
+			children = (
+				3725A60A2A21D7E9009B8654 /* AmmoListView.swift */,
+				3725A60C2A21DE75009B8654 /* AmmoAddView.swift */,
+				3725A60E2A21E2E8009B8654 /* AmmoDetailView.swift */,
+				3725A6152A226E72009B8654 /* AmmoSettingsView.swift */,
+			);
+			path = Ammo;
+			sourceTree = "<group>";
+		};
+		3725A6102A21E957009B8654 /* Weapon */ = {
+			isa = PBXGroup;
+			children = (
+				3725A6112A21E97C009B8654 /* WeaponListView.swift */,
+				3725A6132A2229E4009B8654 /* WeaponDetailView.swift */,
+				3725A61A2A2286E0009B8654 /* WeaponSettingsView.swift */,
+				3725A61C2A228BBD009B8654 /* WeaponAddView.swift */,
+			);
+			path = Weapon;
+			sourceTree = "<group>";
+		};
+		3725A6172A22856B009B8654 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				3725A6182A228588009B8654 /* SessionListView.swift */,
+				3725A61E2A22B6DD009B8654 /* SessionDetailView.swift */,
+				3725A6202A22B870009B8654 /* SessionSettingsView.swift */,
+				3725A6222A22C12A009B8654 /* SessionAddView.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		37E056B12A21D4100035235C = {
+			isa = PBXGroup;
+			children = (
+				37E056BC2A21D4100035235C /* Ammologs */,
+				37E056BB2A21D4100035235C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37E056BB2A21D4100035235C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37E056BA2A21D4100035235C /* Ammologs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37E056BC2A21D4100035235C /* Ammologs */ = {
+			isa = PBXGroup;
+			children = (
+				3725A6082A21D795009B8654 /* Views */,
+				37E056BD2A21D4100035235C /* AmmologsApp.swift */,
+				37E056BF2A21D4100035235C /* ContentView.swift */,
+				37E056C12A21D4130035235C /* Assets.xcassets */,
+				37E056C62A21D4130035235C /* Persistence.swift */,
+				37E056CB2A21D4130035235C /* Info.plist */,
+				37E056C82A21D4130035235C /* Ammologs.xcdatamodeld */,
+				37E056C32A21D4130035235C /* Preview Content */,
+			);
+			path = Ammologs;
+			sourceTree = "<group>";
+		};
+		37E056C32A21D4130035235C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				37E056C42A21D4130035235C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37E056B92A21D4100035235C /* Ammologs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E056CE2A21D4130035235C /* Build configuration list for PBXNativeTarget "Ammologs" */;
+			buildPhases = (
+				37E056B62A21D4100035235C /* Sources */,
+				37E056B72A21D4100035235C /* Frameworks */,
+				37E056B82A21D4100035235C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ammologs;
+			productName = Ammologs;
+			productReference = 37E056BA2A21D4100035235C /* Ammologs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37E056B22A21D4100035235C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					37E056B92A21D4100035235C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 37E056B52A21D4100035235C /* Build configuration list for PBXProject "Ammologs" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37E056B12A21D4100035235C;
+			productRefGroup = 37E056BB2A21D4100035235C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37E056B92A21D4100035235C /* Ammologs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37E056B82A21D4100035235C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E056C52A21D4130035235C /* Preview Assets.xcassets in Resources */,
+				37E056C22A21D4130035235C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37E056B62A21D4100035235C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3725A6122A21E97C009B8654 /* WeaponListView.swift in Sources */,
+				3725A60F2A21E2E8009B8654 /* AmmoDetailView.swift in Sources */,
+				3725A60D2A21DE75009B8654 /* AmmoAddView.swift in Sources */,
+				3725A6142A2229E4009B8654 /* WeaponDetailView.swift in Sources */,
+				3725A61F2A22B6DD009B8654 /* SessionDetailView.swift in Sources */,
+				37E056CA2A21D4130035235C /* Ammologs.xcdatamodeld in Sources */,
+				3725A61B2A2286E0009B8654 /* WeaponSettingsView.swift in Sources */,
+				3725A6232A22C12A009B8654 /* SessionAddView.swift in Sources */,
+				3725A6192A228588009B8654 /* SessionListView.swift in Sources */,
+				3725A6162A226E72009B8654 /* AmmoSettingsView.swift in Sources */,
+				3725A6212A22B870009B8654 /* SessionSettingsView.swift in Sources */,
+				37E056C72A21D4130035235C /* Persistence.swift in Sources */,
+				3725A60B2A21D7E9009B8654 /* AmmoListView.swift in Sources */,
+				37E056C02A21D4100035235C /* ContentView.swift in Sources */,
+				3725A61D2A228BBD009B8654 /* WeaponAddView.swift in Sources */,
+				37E056BE2A21D4100035235C /* AmmologsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		37E056CC2A21D4130035235C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37E056CD2A21D4130035235C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37E056CF2A21D4130035235C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ammologs/Preview Content\"";
+				DEVELOPMENT_TEAM = QFV99BTUR5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AmmoLogs;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ammologs.Ammologs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37E056D02A21D4130035235C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ammologs/Preview Content\"";
+				DEVELOPMENT_TEAM = QFV99BTUR5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AmmoLogs;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ammologs.Ammologs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37E056B52A21D4100035235C /* Build configuration list for PBXProject "Ammologs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E056CC2A21D4130035235C /* Debug */,
+				37E056CD2A21D4130035235C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37E056CE2A21D4130035235C /* Build configuration list for PBXNativeTarget "Ammologs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E056CF2A21D4130035235C /* Debug */,
+				37E056D02A21D4130035235C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		37E056C82A21D4130035235C /* Ammologs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				37E056C92A21D4130035235C /* Ammologs.xcdatamodel */,
+			);
+			currentVersion = 37E056C92A21D4130035235C /* Ammologs.xcdatamodel */;
+			path = Ammologs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 37E056B22A21D4100035235C /* Project object */;
+}

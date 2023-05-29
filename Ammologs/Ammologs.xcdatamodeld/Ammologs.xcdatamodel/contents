@@ -13,7 +13,7 @@
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <entity name="Session" representedClassName="Session" syncable="YES" codeGenerationType="class">
-        <attribute name="count" optional="YES" attributeType="Integer 16" minValueString="1" maxValueString="10000" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="count" optional="YES" attributeType="Integer 16" minValueString="1" maxValueString="10000" defaultValueString="1" usesScalarValueType="YES"/>
         <attribute name="desc" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>

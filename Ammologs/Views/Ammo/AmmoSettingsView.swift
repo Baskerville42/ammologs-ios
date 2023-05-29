@@ -26,13 +26,13 @@ struct AmmoSettingsView: View {
         Form {
             Section {
                 List {
-                    TextField("Name", text: $name)
-                    TextField("Photo", text: $photo)
-                    TextField("Link to store", text: $linkToStore)
+                    TextField(NSLocalizedString("Name", comment: ""), text: $name)
+                    TextField(NSLocalizedString("Photo", comment: ""), text: $photo)
+                    TextField(NSLocalizedString("URL", comment: ""), text: $linkToStore)
                 }
             }
             
-            Section(header: Text("Select a weapon for this ammo")) {
+            Section(header: Text(NSLocalizedString("Select weapon", comment: ""))) {
                 List {
                     ForEach(items) { item in
                         Button(action: {
@@ -64,11 +64,11 @@ struct AmmoSettingsView: View {
         .toolbar {
             ToolbarItem {
                 Button(action: saveAmmo) {
-                    Text("Save")
+                    Text(NSLocalizedString("Save", comment: ""))
                 }
             }
         }
-        .navigationTitle("Preferences")
+        .navigationTitle(NSLocalizedString("Properties", comment: ""))
     }
     
     private func loadAmmoDetails() {

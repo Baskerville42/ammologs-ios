@@ -24,11 +24,11 @@ struct WeaponSettingsView: View {
         Form {
             Section {
                 List {
-                    TextField("Name", text: $name)
+                    TextField(NSLocalizedString("Name", comment: ""), text: $name)
                 }
             }
             
-            Section(header: Text("Select an ammo for this weapon")) {
+            Section(header: Text(NSLocalizedString("Select ammo", comment: ""))) {
                 List {
                     ForEach(items) { item in
                         Button(action: {
@@ -60,11 +60,11 @@ struct WeaponSettingsView: View {
         .toolbar {
             ToolbarItem {
                 Button(action: saveWeapon) {
-                    Text("Save")
+                    Text(NSLocalizedString("Save", comment: ""))
                 }
             }
         }
-        .navigationTitle("Preferences")
+        .navigationTitle(NSLocalizedString("Properties", comment: ""))
     }
     
     private func loadWeaponDetails() {

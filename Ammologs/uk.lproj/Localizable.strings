@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  Ammologs
+
+  Created by Alexander Tartmin on 28.05.2023.
+  Copyright © 2023 Alexander Tartmin. All rights reserved.
+*/
+
+"Ammos" = "Набої";
+"Weapons" = "Зброя";
+"Sessions" = "Стрільби";
+"Add Item" = "Створити";
+"Date" = "Дата";
+"Total shots" = "Всього пострілів";
+"Weapon" = "Зброя";
+"Untitled" = "Без назви";
+"Ammo" = "Набій";
+"Description" = "Опис";
+"Count" = "Кількість";
+"Select weapon" = "Оберіть зброю";
+"Select ammo" = "Оберіть набої";
+"Save" = "Зберегти";
+"Properties" = "Властивості";
+"New session" = "Нова стрільба";
+"New weapon" = "Нова зброя";
+"Name" = "Назва";
+"New ammo" = "Новий набій";
+"Photo" = "Фото";
+"URL" = "Посилання на магазин";
+"Open link" = "Відкрити магазин";

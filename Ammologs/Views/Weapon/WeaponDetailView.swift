@@ -21,11 +21,11 @@ struct WeaponDetailView: View {
                         HStack {
                             Image(systemName: "tennis.racket")
                                 .foregroundColor(.white)
-                            Text("Name")
+                            Text(NSLocalizedString("Name", comment: ""))
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }
-                        Text("\(weapon.name ?? "No Weapon name")")
+                        Text("\(weapon.name ?? NSLocalizedString("Untitled", comment: ""))")
                             .foregroundColor(.white)
                             .fontWeight(.semibold)
                     }
@@ -42,7 +42,7 @@ struct WeaponDetailView: View {
                         HStack {
                             Image(systemName: "42.square")
                                 .foregroundColor(.white)
-                            Text("Total shots")
+                            Text(NSLocalizedString("Total shots", comment: ""))
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }
@@ -65,12 +65,12 @@ struct WeaponDetailView: View {
                         HStack {
                             Image(systemName: "tennisball")
                                 .foregroundColor(.white)
-                            Text("Ammos")
+                            Text(NSLocalizedString("Ammos", comment: ""))
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }
                         ForEach(Array(weapon.ammos as? Set<Ammo> ?? []), id: \.self) { ammo in
-                            Text(ammo.name ?? "No Ammo")
+                            Text(ammo.name ?? NSLocalizedString("Untitled", comment: ""))
                                 .foregroundColor(.white)
                                 .fontWeight(.semibold)
                         }

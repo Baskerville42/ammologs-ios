@@ -29,7 +29,7 @@ struct AmmoListView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
-            .navigationBarTitle("Ammos")
+            .navigationBarTitle(NSLocalizedString("Ammos", comment: ""))
             .toolbar {
                 if !items.isEmpty {
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -40,11 +40,10 @@ struct AmmoListView: View {
                     Button(action: {
                             isAddingAmmo = true
                     }) {
-                        Label("Add Item", systemImage: "plus")
+                        Label(NSLocalizedString("New ammo", comment: ""), systemImage: "plus")
                     }
                 }
             }
-            Text("Select an item")
         }
         .sheet(isPresented: $isAddingAmmo) {
             AmmoAddView(isPresented: $isAddingAmmo)

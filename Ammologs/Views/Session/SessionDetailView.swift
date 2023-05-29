@@ -18,7 +18,7 @@ struct SessionDetailView: View {
                         HStack {
                             Image(systemName: "calendar")
                                 .foregroundColor(.white)
-                            Text("Date")
+                            Text(NSLocalizedString("Date", comment: ""))
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }
@@ -39,7 +39,7 @@ struct SessionDetailView: View {
                         HStack {
                             Image(systemName: "42.square")
                                 .foregroundColor(.white)
-                            Text("Total shots")
+                            Text(NSLocalizedString("Total shots", comment: ""))
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }
@@ -62,11 +62,11 @@ struct SessionDetailView: View {
                         HStack {
                             Image(systemName: "tennis.racket")
                                 .foregroundColor(.white)
-                            Text("Weapon")
+                            Text(NSLocalizedString("Weapon", comment: ""))
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }
-                        Text("\(session.weapon?.name ?? "No Weapon")")
+                        Text("\(session.weapon?.name ?? NSLocalizedString("Untitled", comment: ""))")
                             .foregroundColor(.white)
                             .fontWeight(.semibold)
                     }
@@ -83,11 +83,11 @@ struct SessionDetailView: View {
                         HStack {
                             Image(systemName: "tennisball")
                                 .foregroundColor(.white)
-                            Text("Ammo")
+                            Text(NSLocalizedString("Ammo", comment: ""))
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }
-                        Text("\(session.ammo?.name ?? "No Ammo")")
+                        Text("\(session.ammo?.name ?? NSLocalizedString("Untitled", comment: ""))")
                             .foregroundColor(.white)
                             .fontWeight(.semibold)
                     }
@@ -119,6 +119,5 @@ struct SessionDetailView: View {
 private let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.dateStyle = .short
-//    formatter.timeStyle = .medium
     return formatter
 }()

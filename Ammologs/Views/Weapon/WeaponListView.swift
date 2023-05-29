@@ -28,7 +28,7 @@ struct WeaponListView: View {
                     }
                 }.onDelete(perform: deleteItems)
             }
-            .navigationBarTitle("Weapons")
+            .navigationBarTitle(NSLocalizedString("Weapons", comment: ""))
             .toolbar {
                 if !items.isEmpty {
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -39,7 +39,7 @@ struct WeaponListView: View {
                     Button(action: {
                             isAddingWeapon = true
                     }) {
-                        Label("Add Item", systemImage: "plus")
+                        Label(NSLocalizedString("New weapon", comment: ""), systemImage: "plus")
                     }
                 }
             }

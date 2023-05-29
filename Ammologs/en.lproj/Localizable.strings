@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  Ammologs
+
+  Created by Alexander Tartmin on 28.05.2023.
+  Copyright © 2023 Alexander Tartmin. All rights reserved.
+*/
+
+"Ammos" = "Ammunition";
+"Weapons" = "Weapons";
+"Sessions" = "Shooting Rounds";
+"Add Item" = "Add Item";
+"Date" = "Date";
+"Total shots" = "Total Shots";
+"Weapon" = "Weapon";
+"Untitled" = "Untitled";
+"Ammo" = "Ammo";
+"Description" = "Description";
+"Count" = "Count";
+"Select weapon" = "Select Weapon";
+"Select ammo" = "Select Ammo";
+"Save" = "Save";
+"Properties" = "Properties";
+"New session" = "New Shooting Round";
+"New weapon" = "New Weapon";
+"Name" = "Name";
+"New ammo" = "New Ammo";
+"Photo" = "Photo";
+"URL" = "Store Link";
+"Open link" = "Open Store";

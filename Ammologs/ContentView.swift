@@ -12,15 +12,15 @@ struct ContentView: View {
         TabView {
             SessionListView()
                 .tabItem{
-                    Label("Sessions", systemImage: "figure.hunting")
+                    Label(NSLocalizedString("Sessions", comment: ""), systemImage: "figure.hunting")
                 }
             WeaponListView()
                 .tabItem{
-                    Label("Weapons", systemImage: "tennis.racket")
+                    Label(NSLocalizedString("Weapons", comment: ""), systemImage: "tennis.racket")
                 }
             AmmoListView()
                 .tabItem{
-                    Label("Ammos", systemImage: "tennisball")
+                    Label(NSLocalizedString("Ammos", comment: ""), systemImage: "tennisball")
                 }
         }
     }

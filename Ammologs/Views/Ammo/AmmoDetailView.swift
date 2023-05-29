@@ -32,11 +32,11 @@ struct AmmoDetailView: View {
                         HStack {
                             Image(systemName: "tennisball")
                                 .foregroundColor(.white)
-                            Text("Name")
+                            Text(NSLocalizedString("Name", comment: ""))
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }
-                        Text("\(ammo.name ?? "No Ammo")")
+                        Text("\(ammo.name ?? NSLocalizedString("Untitled", comment: ""))")
                             .foregroundColor(.white)
                             .fontWeight(.semibold)
                     }
@@ -53,7 +53,7 @@ struct AmmoDetailView: View {
                         HStack {
                             Image(systemName: "42.square")
                                 .foregroundColor(.white)
-                            Text("Total shots")
+                            Text(NSLocalizedString("Total shots", comment: ""))
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }
@@ -66,7 +66,7 @@ struct AmmoDetailView: View {
                 .frame(maxWidth: .infinity)
                 .frame(maxHeight: .infinity)
                 .padding(5)
-                .background(Color.red)
+                .background(Color.green)
                 .cornerRadius(10)
             }
             
@@ -76,12 +76,12 @@ struct AmmoDetailView: View {
                         HStack {
                             Image(systemName: "tennis.racket")
                                 .foregroundColor(.white)
-                            Text("Weapons")
+                            Text(NSLocalizedString("Weapon", comment: ""))
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }
                         ForEach(Array(ammo.weapons as? Set<Weapon> ?? []), id: \.self) { weapon in
-                            Text(weapon.name ?? "No Weapon")
+                            Text(weapon.name ?? NSLocalizedString("Untitled", comment: ""))
                                 .foregroundColor(.white)
                                 .fontWeight(.semibold)
                         }
@@ -91,7 +91,7 @@ struct AmmoDetailView: View {
                 .frame(maxWidth: .infinity)
                 .frame(maxHeight: .infinity)
                 .padding(5)
-                .background(Color.purple)
+                .background(Color.orange)
                 .cornerRadius(10)
                 
                 HStack {
@@ -99,7 +99,7 @@ struct AmmoDetailView: View {
                         VStack(alignment: .leading) {
                             Link(destination: URL(string: ammo.linkToStore!)!) {
                                 HStack {
-                                    Text("Open in browser")
+                                    Text(NSLocalizedString("Open link", comment: ""))
                                         .foregroundColor(.white)
                                         .fontWeight(.semibold)
                                     Image(systemName: "link")
@@ -113,7 +113,7 @@ struct AmmoDetailView: View {
                     .frame(maxWidth: .infinity)
                     .frame(maxHeight: .infinity)
                     .padding(5)
-                    .background(Color.purple)
+                    .background(Color.red)
                     .cornerRadius(10)
                 }
             }

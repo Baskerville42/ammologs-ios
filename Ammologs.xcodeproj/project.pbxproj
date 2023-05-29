@@ -19,6 +19,7 @@
 		3725A61F2A22B6DD009B8654 /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A61E2A22B6DD009B8654 /* SessionDetailView.swift */; };
 		3725A6212A22B870009B8654 /* SessionSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A6202A22B870009B8654 /* SessionSettingsView.swift */; };
 		3725A6232A22C12A009B8654 /* SessionAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A6222A22C12A009B8654 /* SessionAddView.swift */; };
+		3725A6262A23E210009B8654 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3725A6282A23E210009B8654 /* Localizable.strings */; };
 		37E056BE2A21D4100035235C /* AmmologsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E056BD2A21D4100035235C /* AmmologsApp.swift */; };
 		37E056C02A21D4100035235C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E056BF2A21D4100035235C /* ContentView.swift */; };
 		37E056C22A21D4130035235C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E056C12A21D4130035235C /* Assets.xcassets */; };
@@ -40,6 +41,8 @@
 		3725A61E2A22B6DD009B8654 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
 		3725A6202A22B870009B8654 /* SessionSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSettingsView.swift; sourceTree = "<group>"; };
 		3725A6222A22C12A009B8654 /* SessionAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionAddView.swift; sourceTree = "<group>"; };
+		3725A6272A23E210009B8654 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3725A6292A23E214009B8654 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		37E056BA2A21D4100035235C /* Ammologs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ammologs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E056BD2A21D4100035235C /* AmmologsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmologsApp.swift; sourceTree = "<group>"; };
 		37E056BF2A21D4100035235C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +134,7 @@
 				37E056CB2A21D4130035235C /* Info.plist */,
 				37E056C82A21D4130035235C /* Ammologs.xcdatamodeld */,
 				37E056C32A21D4130035235C /* Preview Content */,
+				3725A6282A23E210009B8654 /* Localizable.strings */,
 			);
 			path = Ammologs;
 			sourceTree = "<group>";
@@ -172,6 +176,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = "Alexander Tartmin";
 				TargetAttributes = {
 					37E056B92A21D4100035235C = {
 						CreatedOnToolsVersion = 14.3;
@@ -185,6 +190,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = 37E056B12A21D4100035235C;
 			productRefGroup = 37E056BB2A21D4100035235C /* Products */;
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E056C52A21D4130035235C /* Preview Assets.xcassets in Resources */,
+				3725A6262A23E210009B8654 /* Localizable.strings in Resources */,
 				37E056C22A21D4130035235C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +240,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3725A6282A23E210009B8654 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3725A6272A23E210009B8654 /* uk */,
+				3725A6292A23E214009B8654 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		37E056CC2A21D4130035235C /* Debug */ = {
@@ -360,6 +379,7 @@
 				DEVELOPMENT_TEAM = QFV99BTUR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ammologs/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AmmoLogs;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -391,6 +411,7 @@
 				DEVELOPMENT_TEAM = QFV99BTUR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ammologs/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AmmoLogs;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

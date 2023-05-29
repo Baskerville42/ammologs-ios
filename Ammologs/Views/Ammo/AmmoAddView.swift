@@ -13,22 +13,22 @@ struct AmmoAddView: View {
     @Binding var isPresented: Bool
     
     @State private var name = ""
-    @State private var photo = "https://ibis.net.ua/static/products_pictures/f/3/8/patron-zala-arms-ipsc-kal-1270-drob-6-275-mm-naveska-32-g.jpg"
+    @State private var photo = ""
     @State private var linkToStore = ""
     
     var body: some View {
         NavigationView {
             Form {
-                TextField("Name", text: $name)
-                TextField("Photo", text: $photo)
-                TextField("Link to store", text: $linkToStore)
+                TextField(NSLocalizedString("Name", comment: ""), text: $name)
+                TextField(NSLocalizedString("Photo", comment: ""), text: $photo)
+                TextField(NSLocalizedString("URL", comment: ""), text: $linkToStore)
             }
             
-            .navigationTitle("Add Ammo")
+            .navigationTitle(NSLocalizedString("New ammo", comment: ""))
             .toolbar {
                 ToolbarItem {
                     Button(action: addItem) {
-                        Text("Save")
+                        Text(NSLocalizedString("Save", comment: ""))
                     }
                 }
             }

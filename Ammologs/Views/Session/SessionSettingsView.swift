@@ -28,13 +28,13 @@ struct SessionSettingsView: View {
         Form {
             Section {
                 List {
-                    TextField("Description", text: $desc)
-                    TextField("Count", value: $count, formatter: NumberFormatter())
+                    TextField(NSLocalizedString("Description", comment: ""), text: $desc)
+                    TextField(NSLocalizedString("Count", comment: ""), value: $count, formatter: NumberFormatter())
                         .keyboardType(.numberPad)
                 }
             }
             
-            Section(header: Text("Select an weapon for this session")) {
+            Section(header: Text(NSLocalizedString("Select weapon", comment: ""))) {
                 List {
                     ForEach(weapons) { item in
                         Button(action: {
@@ -59,7 +59,7 @@ struct SessionSettingsView: View {
                 }
             }
             
-            Section(header: Text("Select an ammo for this session")) {
+            Section(header: Text(NSLocalizedString("Select ammo", comment: ""))) {
                 List {
                     ForEach(ammos) { item in
                         Button(action: {
@@ -91,11 +91,11 @@ struct SessionSettingsView: View {
         .toolbar {
             ToolbarItem {
                 Button(action: saveWeapon) {
-                    Text("Save")
+                    Text(NSLocalizedString("Save", comment: ""))
                 }
             }
         }
-        .navigationTitle("Preferences")
+        .navigationTitle(NSLocalizedString("Properties", comment: ""))
     }
     
     private func loadWeaponDetails() {

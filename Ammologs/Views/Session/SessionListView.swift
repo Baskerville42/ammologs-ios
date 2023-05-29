@@ -29,7 +29,7 @@ struct SessionListView: View {
                 }.onDelete(perform: deleteItems)
             }
             
-            .navigationBarTitle("Shooting sessions")
+            .navigationBarTitle(NSLocalizedString("Sessions", comment: ""))
             .toolbar {
                 if !items.isEmpty {
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -40,7 +40,7 @@ struct SessionListView: View {
                     Button(action: {
                             isAddingSession = true
                     }) {
-                        Label("Add Item", systemImage: "plus")
+                        Label(NSLocalizedString("Add Item", comment: ""), systemImage: "plus")
                     }
                 }
             }

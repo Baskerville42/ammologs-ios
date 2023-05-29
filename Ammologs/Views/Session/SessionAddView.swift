@@ -18,22 +18,20 @@ struct SessionAddView: View {
     var body: some View {
         NavigationView {
             Form {
-                TextField("Description", text: $desc)
-                TextField("Count", value: $count, formatter: NumberFormatter())
+                TextField(NSLocalizedString("Description", comment: ""), text: $desc)
+                TextField(NSLocalizedString("Count", comment: ""), value: $count, formatter: NumberFormatter())
                     .keyboardType(.numberPad)
             }
             
-            .navigationTitle("Add Session")
+            .navigationTitle(NSLocalizedString("New session", comment: ""))
             .toolbar {
                 ToolbarItem {
                     Button(action: addItem) {
-                        Text("Save")
+                        Text(NSLocalizedString("Save", comment: ""))
                     }
                 }
             }
         }
-        
-        
     }
     
     private func addItem() {

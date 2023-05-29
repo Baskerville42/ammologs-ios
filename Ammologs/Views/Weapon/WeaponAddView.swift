@@ -17,14 +17,14 @@ struct WeaponAddView: View {
     var body: some View {
         NavigationView {
             Form {
-                TextField("Name", text: $name)
+                TextField(NSLocalizedString("Name", comment: ""), text: $name)
             }
             
-            .navigationTitle("Add Weapon")
+            .navigationTitle(NSLocalizedString("New weapon", comment: ""))
             .toolbar {
                 ToolbarItem {
                     Button(action: addItem) {
-                        Text("Save")
+                        Text(NSLocalizedString("Save", comment: ""))
                     }
                 }
             }

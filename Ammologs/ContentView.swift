@@ -22,6 +22,10 @@ struct ContentView: View {
                 .tabItem{
                     Label(NSLocalizedString("Ammos", comment: ""), systemImage: "tennisball")
                 }
+            AboutAppView()
+                .tabItem{
+                    Label(NSLocalizedString("More", comment: ""), systemImage: "ellipsis")
+                }
         }
     }
 }

@@ -20,6 +20,7 @@
 		3725A6212A22B870009B8654 /* SessionSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A6202A22B870009B8654 /* SessionSettingsView.swift */; };
 		3725A6232A22C12A009B8654 /* SessionAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725A6222A22C12A009B8654 /* SessionAddView.swift */; };
 		3725A6262A23E210009B8654 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3725A6282A23E210009B8654 /* Localizable.strings */; };
+		378FC8F72A278B8E00E4460C /* AboutAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FC8F62A278B8E00E4460C /* AboutAppView.swift */; };
 		37E056BE2A21D4100035235C /* AmmologsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E056BD2A21D4100035235C /* AmmologsApp.swift */; };
 		37E056C02A21D4100035235C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E056BF2A21D4100035235C /* ContentView.swift */; };
 		37E056C22A21D4130035235C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E056C12A21D4130035235C /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		3725A6272A23E210009B8654 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3725A6292A23E214009B8654 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		378FC8F42A27832A00E4460C /* Ammologs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ammologs.entitlements; sourceTree = "<group>"; };
+		378FC8F62A278B8E00E4460C /* AboutAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppView.swift; sourceTree = "<group>"; };
 		37E056BA2A21D4100035235C /* Ammologs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ammologs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E056BD2A21D4100035235C /* AmmologsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmologsApp.swift; sourceTree = "<group>"; };
 		37E056BF2A21D4100035235C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		3725A6082A21D795009B8654 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				378FC8F52A278B6600E4460C /* Settings */,
 				3725A6172A22856B009B8654 /* Session */,
 				3725A6102A21E957009B8654 /* Weapon */,
 				3725A6092A21D7A7009B8654 /* Ammo */,
@@ -106,6 +109,14 @@
 				3725A6222A22C12A009B8654 /* SessionAddView.swift */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		378FC8F52A278B6600E4460C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				378FC8F62A278B8E00E4460C /* AboutAppView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		37E056B12A21D4100035235C = {
@@ -231,6 +242,7 @@
 				3725A61B2A2286E0009B8654 /* WeaponSettingsView.swift in Sources */,
 				3725A6232A22C12A009B8654 /* SessionAddView.swift in Sources */,
 				3725A6192A228588009B8654 /* SessionListView.swift in Sources */,
+				378FC8F72A278B8E00E4460C /* AboutAppView.swift in Sources */,
 				3725A6162A226E72009B8654 /* AmmoSettingsView.swift in Sources */,
 				3725A6212A22B870009B8654 /* SessionSettingsView.swift in Sources */,
 				37E056C72A21D4130035235C /* Persistence.swift in Sources */,

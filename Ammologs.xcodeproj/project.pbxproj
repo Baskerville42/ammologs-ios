@@ -43,6 +43,7 @@
 		3725A6222A22C12A009B8654 /* SessionAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionAddView.swift; sourceTree = "<group>"; };
 		3725A6272A23E210009B8654 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3725A6292A23E214009B8654 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		378FC8F42A27832A00E4460C /* Ammologs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ammologs.entitlements; sourceTree = "<group>"; };
 		37E056BA2A21D4100035235C /* Ammologs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ammologs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E056BD2A21D4100035235C /* AmmologsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmologsApp.swift; sourceTree = "<group>"; };
 		37E056BF2A21D4100035235C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		37E056BC2A21D4100035235C /* Ammologs */ = {
 			isa = PBXGroup;
 			children = (
+				378FC8F42A27832A00E4460C /* Ammologs.entitlements */,
 				3725A6082A21D795009B8654 /* Views */,
 				37E056BD2A21D4100035235C /* AmmologsApp.swift */,
 				37E056BF2A21D4100035235C /* ContentView.swift */,
@@ -373,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ammologs/Ammologs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ammologs/Preview Content\"";
@@ -405,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ammologs/Ammologs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ammologs/Preview Content\"";

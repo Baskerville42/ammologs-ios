@@ -23,6 +23,7 @@ struct SessionSettingsView: View {
     
     @State private var desc = ""
     @State private var count: Int = 0
+    @State private var shootingDate = Date()
     
     var body: some View {
         Form {
@@ -59,38 +60,43 @@ struct SessionSettingsView: View {
                 }
             }
             
-            Section(header: Text(NSLocalizedString("Select ammo", comment: ""))) {
-                List {
-                    ForEach(ammos) { item in
-                        Button(action: {
-                            if session.ammo?.id == item.id {
-                                deleteAmmo(from: session)
-                            } else {
-                                addAmmo(to: session, ammoID: item.id!)
-                            }
-                        }, label: {
-                            HStack {
+            if let weaponAmmos = session.weapon?.ammos as? Set<Ammo> {
+                let sortedAmmos = weaponAmmos.sorted {
+                    $0.name! < $1.name!
+                }
+                Section(header: Text(NSLocalizedString("Select ammo", comment: ""))) {
+                    List {
+                        ForEach(sortedAmmos) { item in
+                            Button(action: {
                                 if session.ammo?.id == item.id {
-                                    Image(systemName: "checkmark.circle.fill")
-                                        .foregroundColor(.green)
+                                    deleteAmmo(from: session)
                                 } else {
-                                    Image(systemName: "checkmark.circle")
+                                    addAmmo(to: session, ammoID: item.id!)
                                 }
+                            }, label: {
+                                HStack {
+                                    if session.ammo?.id == item.id {
+                                        Image(systemName: "checkmark.circle.fill")
+                                            .foregroundColor(.green)
+                                    } else {
+                                        Image(systemName: "checkmark.circle")
+                                    }
 
-                                Text(item.name!)
-                            }
-                        })
+                                    Text(item.name!)
+                                }
+                            })
+                        }
                     }
                 }
             }
         }
         
         .onAppear {
-            loadWeaponDetails()
+            loadSessionDetails()
         }
         .toolbar {
             ToolbarItem {
-                Button(action: saveWeapon) {
+                Button(action: saveSession) {
                     Text(NSLocalizedString("Save", comment: ""))
                 }
             }
@@ -98,14 +104,16 @@ struct SessionSettingsView: View {
         .navigationTitle(NSLocalizedString("Properties", comment: ""))
     }
     
-    private func loadWeaponDetails() {
+    private func loadSessionDetails() {
         desc = session.desc ?? ""
         count = Int(session.count)
+        shootingDate = session.timestamp ?? Date()
     }
     
-    private func saveWeapon() {
+    private func saveSession() {
         session.desc = desc
         session.count = Int16(count)
+        session.timestamp = shootingDate
 
         do {
             try viewContext.save()
@@ -155,6 +163,7 @@ struct SessionSettingsView: View {
 
     private func deleteWeapon(from session: Session) {
         session.weapon = nil
+        session.ammo = nil
         
         do {
             try viewContext.save()

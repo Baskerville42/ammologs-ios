@@ -9,13 +9,12 @@ import SwiftUI
 
 struct SessionListView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var quickActionSettings: QuickActionSettings
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Weapon.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Session>
-    
-    @State private var isAddingSession = false
     
     var body: some View {
         NavigationView {
@@ -38,15 +37,15 @@ struct SessionListView: View {
                 }
                 ToolbarItem {
                     Button(action: {
-                            isAddingSession = true
+                        quickActionSettings.isAddingSession = true
                     }) {
                         Label(NSLocalizedString("Add Item", comment: ""), systemImage: "plus")
                     }
                 }
             }
         }
-        .sheet(isPresented: $isAddingSession) {
-            SessionAddView(isPresented: $isAddingSession)
+        .sheet(isPresented: $quickActionSettings.isAddingSession) {
+            SessionAddView(isPresented: $quickActionSettings.isAddingSession)
         }
     }
     

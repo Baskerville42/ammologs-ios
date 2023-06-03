@@ -27,6 +27,7 @@
 		37E056C52A21D4130035235C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E056C42A21D4130035235C /* Preview Assets.xcassets */; };
 		37E056C72A21D4130035235C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E056C62A21D4130035235C /* Persistence.swift */; };
 		37E056CA2A21D4130035235C /* Ammologs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37E056C82A21D4130035235C /* Ammologs.xcdatamodeld */; };
+		37E4B4402A2B4B68005E1890 /* QuickActionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E4B43F2A2B4B68005E1890 /* QuickActionSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		37E056C62A21D4130035235C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		37E056C92A21D4130035235C /* Ammologs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ammologs.xcdatamodel; sourceTree = "<group>"; };
 		37E056CB2A21D4130035235C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E4B43F2A2B4B68005E1890 /* QuickActionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				37E056C82A21D4130035235C /* Ammologs.xcdatamodeld */,
 				37E056C32A21D4130035235C /* Preview Content */,
 				3725A6282A23E210009B8654 /* Localizable.strings */,
+				37E4B43F2A2B4B68005E1890 /* QuickActionSettings.swift */,
 			);
 			path = Ammologs;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				3725A6122A21E97C009B8654 /* WeaponListView.swift in Sources */,
 				3725A60F2A21E2E8009B8654 /* AmmoDetailView.swift in Sources */,
 				3725A60D2A21DE75009B8654 /* AmmoAddView.swift in Sources */,
+				37E4B4402A2B4B68005E1890 /* QuickActionSettings.swift in Sources */,
 				3725A6142A2229E4009B8654 /* WeaponDetailView.swift in Sources */,
 				3725A61F2A22B6DD009B8654 /* SessionDetailView.swift in Sources */,
 				37E056CA2A21D4130035235C /* Ammologs.xcdatamodeld in Sources */,

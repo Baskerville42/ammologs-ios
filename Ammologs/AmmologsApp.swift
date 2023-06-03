@@ -38,6 +38,7 @@ struct AmmologsApp: App {
                     default:
                         print("default ")
                     }
+                shortcutItemToProcess = nil
             case .inactive:
                  print("App is inactive")
             case .background:

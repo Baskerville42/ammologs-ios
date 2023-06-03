@@ -28,7 +28,11 @@ struct AmmoSettingsView: View {
                 List {
                     TextField(NSLocalizedString("Name", comment: ""), text: $name)
                     TextField(NSLocalizedString("Photo", comment: ""), text: $photo)
+                        .keyboardType(.URL)
+                        .autocapitalization(.none)
                     TextField(NSLocalizedString("URL", comment: ""), text: $linkToStore)
+                        .keyboardType(.URL)
+                        .autocapitalization(.none)
                 }
             }
             
